@@ -26,6 +26,7 @@ async function checkNumbers() {
 
 // Listen for messages
 bot.command("start", (ctx) => ctx.reply("¡Hola, mandame tu decimo de 5 digitos!"));
+bot.command("about", (ctx) => ctx.reply("Hecho con ❤ por @TLuigi003 . Si te gusta puedes donarme un cafecito: https://ko-fi.com/luismayo"))
 bot.command('decimos', (ctx) => {
     if (ctx.message) {
         ctx.reply('Tienes los siguientes decimos(si un decimo ya ha sido premiado no aparecerá):\n' + db.getTicketsByUser(ctx.message).map(ticker => ticker.toString().padStart(5, '0')).join('\n'));
