@@ -54,6 +54,6 @@ bot.on(
 
 // Launch!
 bot.start();
-// setInterval(checkNumbers, 60000 * 5);
+setInterval(checkNumbers, 60000 * 5);
 checkNumbers();
-setInterval(checkNumbers, 10000);
+// setInterval(checkNumbers, 10000);
